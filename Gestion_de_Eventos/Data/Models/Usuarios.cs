@@ -1,7 +1,5 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Runtime.InteropServices;
-using Microsoft.EntityFrameworkCore;
 
 namespace Gestion_de_Eventos.Data.Models;
 
@@ -17,4 +15,4 @@ public class Usuarios
     public string MetodoDePago {get; set;}
     [EmailAddress]
     public string Correo {get; set;} 
- }
+}

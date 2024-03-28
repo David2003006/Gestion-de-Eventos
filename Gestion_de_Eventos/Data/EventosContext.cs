@@ -9,9 +9,9 @@ public class EventosContext : DbContext
     public EventosContext(DbContextOptions<EventosContext> options): base(options){}
 
     public DbSet<Usuarios> Usuarios { get; set; }
-    public DbSet<Eventos> Eventos { get; set; }
-    public DbSet<IngresarComprarBoleto> IngresarComprarBoletos { get; set; }
     public DbSet<Organizadores> Organizadores { get; set; }
+    public DbSet<Eventos> Eventos { get; set; }
+    public DbSet<IngresarComprarBoletos> IngresarComprarBoletos { get; set; }
 
     public DbSet<Comentarios> Comentarios { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

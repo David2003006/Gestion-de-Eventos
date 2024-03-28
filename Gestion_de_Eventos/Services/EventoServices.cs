@@ -43,5 +43,26 @@ namespace Gestion_de_Eventos.Services;
             return newEvento;
         } 
 
+        public async Task<Eventos?> Edit (int id, EventoDTO evento)
+        {
+            var encontrado = await GetById(id);
+
+            if(encontrado != null)
+            {
+                encontrado.Nombre= evento.Nombre;
+                encontrado.Descripcion = evento.Direccion;
+                encontrado.Fecha = evento.Fecha;
+                encontrado.Hora = evento.Hora;
+                encontrado.Direccion = evento.Direccion;
+                encontrado.BoletosDisponibles= evento.BoletosDisponibles;
+                encontrado.Costo = evento.Costo;
+                _context.Eventos.Update(encontrado);
+                await _context.SaveChangesAsync();
+                return encontrado;
+            }else
+            {
+                return null;
+            }
+        }
 
    }

@@ -40,6 +40,20 @@ public class EventoController : ControllerBase
         return CreatedAtAction(nameof(GetById), new{id= newEvento.IdEvento}, newEvento); 
     }
 
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Edit(int id, EventoDTO evento)
+    {
+        var editEvento = await _services.Edit(id, evento);
+
+        if(editEvento != null)
+        {
+            return CreatedAtAction(nameof(GetById), new{id= editEvento.IdEvento}, editEvento);
+        }else
+        {
+            return BadRequest("No se encontro el evento a actualizar");
+        }
+    }
+
 
 
 }

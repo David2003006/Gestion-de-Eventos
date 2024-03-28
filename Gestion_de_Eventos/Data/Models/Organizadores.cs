@@ -3,17 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Gestion_de_Eventos.Data.Models;
 
-public class Organizadores 
+public class Organizadores
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int IdOrganizador {get; set;}
-
+    public int IdOganizador {get; set;}
     public string Nombre {get; set;}
-
     public string Apellido {get; set;}
-
     public string NombreEmpresa {get; set;}
-    [EmailAddress]
+    [EmailAddress]   
     public string Correo {get; set;}
 }

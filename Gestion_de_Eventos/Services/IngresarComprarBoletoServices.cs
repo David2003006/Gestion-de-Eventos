@@ -15,9 +15,9 @@ public class IngresarComprarBoletoServices
         this._context= context;
     } 
 
-    public async Task<IngresarComprarBoleto>  Create(IngresarComprarBoletoDTO boleto)
+    public async Task<IngresarComprarBoletos>  Create(IngresarComprarBoletoDTO boleto)
     {
-        var newBoleto = new IngresarComprarBoleto();
+        var newBoleto = new IngresarComprarBoletos();
 
         newBoleto.IdEvento= boleto.IdEvento;
         newBoleto.IdUsuario= boleto.IdUsuario;

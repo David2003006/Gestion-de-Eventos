@@ -3,27 +3,27 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Gestion_de_Eventos.Data.Models;
 
-public class Eventos 
+public class Eventos
 {
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int IdEvento {get; set;}
-    
-    public int IdOrganizador {get; set;}
-    public string Nombre { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int IdEvento {get; set;}
+        public int IdOrganizador {get; set;}
 
-    public string Descripcion { get; set; }
+        public string Nombre { get; set; }
 
-    public DateOnly? Fecha { get; set; }
+        public string Descripcion { get; set; }
 
-    public TimeOnly? Hora { get; set; }
+        public DateOnly? Fecha { get; set; }
 
-    public string Direccion { get; set; }
+        public TimeOnly? Hora { get; set; }
 
-    public int BoletosDisponibles { get; set; }
+        public string Direccion { get; set; }
 
-    public double Costo { get; set; }
+        public int BoletosDisponibles { get; set; }
 
-    [ForeignKey("IdOrganizador")]
-    public Organizadores Organizador {get; set;}
+        public double Costo { get; set; }
+
+        [ForeignKey("IdOganizador")]
+        public Eventos Evento {get; set; }
 }

@@ -32,7 +32,7 @@ public class OrganizadoresController: ControllerBase
     public async Task<ActionResult<Organizadores>> Create (OrganizadorDTO organizador)
     {
         var newOrganizador= await _services.Create(organizador);
-        return CreatedAtAction(nameof(GetById), new{id= newOrganizador.IdOrganizador}, newOrganizador); ;
+        return CreatedAtAction(nameof(GetById), new{id= newOrganizador.IdOganizador}, newOrganizador); ;
     }
 
 }
