@@ -23,7 +23,9 @@ public class UsuarioController : ControllerBase
     }
 
     [HttpGet("{id}")]
+#pragma warning disable CS8632 // The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
     public async Task<Usuarios?> GetById(int id)
+#pragma warning restore CS8632 // The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.
     {
         var found = await _services.GetById(id);
 
@@ -32,6 +34,18 @@ public class UsuarioController : ControllerBase
         
         return found;
     }
+
+    [HttpGet("valor/{valor}")]
+    public async Task<ActionResult<Eventos>> GetByValor(string valor)
+    {
+        var encontrado= await  _services.GetByValor(valor);
+
+        if(encontrado is not null)
+            return encontrado;
+        else
+            return BadRequest("No Se encontro el evento");
+    }
+
 
     [HttpPost]
     public async Task<IActionResult> create(UsuarioDTO usuario)

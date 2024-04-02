@@ -14,6 +14,8 @@ public class EventosContext : DbContext
     public DbSet<IngresarComprarBoletos> IngresarComprarBoletos { get; set; }
 
     public DbSet<Comentarios> Comentarios { get; set; }
+
+    public DbSet<Seguidores > Seguidores { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Usuarios>()

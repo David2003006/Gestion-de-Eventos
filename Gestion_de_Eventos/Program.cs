@@ -28,6 +28,7 @@ builder.Services.AddScoped<UsuarioServices>();
 builder.Services.AddScoped<IngresarComprarBoletoServices>();
 builder.Services.AddScoped<OrganizadorServices>();
 builder.Services.AddScoped<ComentarioServices>();
+builder.Services.AddScoped<SeguidoresServices>();
 //aqui ingresas caundo tengas el token
 
 var app = builder.Build();

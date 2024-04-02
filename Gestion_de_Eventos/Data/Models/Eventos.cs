@@ -24,6 +24,14 @@ public class Eventos
 
         public double Costo { get; set; }
 
+         public List<Eventos> ListaEventos { get; set; }
+
         [ForeignKey("IdOganizador")]
         public Eventos Evento {get; set; }
+        public string Ubicacion { get; internal set; }
+
+    public Eventos()
+    {
+        ListaEventos = new List<Eventos>();
+    }
 }
