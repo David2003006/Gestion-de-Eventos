@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dXAsfLUNsEtBfgBU8ffcMJSWPz3t02XEPQNhUaU3pA1Qm1U4K1sLinPZkQOGoeGY+JT55vqa1fd87rnHZtVTXg==",
+  "dgSpecHash": "DjFZP6+dgNGesbuDGsdEc6un6J2tmdntK/FAO0ROQrfKk7ymZQaBZcWQN4Tbs4Gl9jMuYeNAArv04Vx7GaCWiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dell\\Documents\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\Gestion de Eventos.csproj",
+  "projectFilePath": "c:\\Users\\dell\\Documents\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\Gestion de Eventos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dell\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
