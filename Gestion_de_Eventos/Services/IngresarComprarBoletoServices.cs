@@ -1,6 +1,7 @@
 using Gestion_de_Eventos.Data;
 using Gestion_de_Eventos.Data.DTOS;
 using Gestion_de_Eventos.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace Gestion_de_Eventos.Services;
@@ -13,7 +14,12 @@ public class IngresarComprarBoletoServices
     public IngresarComprarBoletoServices (EventosContext context)
     {
         this._context= context;
-    } 
+    }
+
+         public async Task<IEnumerable<IngresarComprarBoletos>> GetAll()
+        {
+            return await _context.IngresarComprarBoletos.ToListAsync();
+        } 
 
     public async Task<IngresarComprarBoletos>  Create(IngresarComprarBoletoDTO boleto)
     {

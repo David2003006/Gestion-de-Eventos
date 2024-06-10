@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\dell\\Documents\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\Gestion de Eventos.csproj": {}
+    "C:\\Users\\dell\\OneDrive\\Documentos\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\Gestion de Eventos.csproj": {}
   },
   "projects": {
-    "c:\\Users\\dell\\Documents\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\Gestion de Eventos.csproj": {
+    "C:\\Users\\dell\\OneDrive\\Documentos\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\Gestion de Eventos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\dell\\Documents\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\Gestion de Eventos.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Documentos\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\Gestion de Eventos.csproj",
         "projectName": "Gestion de Eventos",
-        "projectPath": "c:\\Users\\dell\\Documents\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\Gestion de Eventos.csproj",
+        "projectPath": "C:\\Users\\dell\\OneDrive\\Documentos\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\Gestion de Eventos.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\dell\\Documents\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\obj\\",
+        "outputPath": "C:\\Users\\dell\\OneDrive\\Documentos\\Portafolio\\Gestion-de-Eventos\\Gestion_de_Eventos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config"

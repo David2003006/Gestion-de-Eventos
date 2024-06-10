@@ -1,4 +1,5 @@
 using Gestion_de_Eventos.Data.DTOS;
+using Gestion_de_Eventos.Data.Models;
 using Gestion_de_Eventos.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,6 +15,14 @@ public class IngresarComprarBoletoController : ControllerBase
     {
         this._services = services;
     }
+
+     [HttpGet]
+    public async Task<IEnumerable<IngresarComprarBoletos>> Get()
+    {
+        return await _services.GetAll();
+    }    
+
+
 
     [HttpPost]
     public async Task<IActionResult> Create(IngresarComprarBoletoDTO boletoDTO  )
